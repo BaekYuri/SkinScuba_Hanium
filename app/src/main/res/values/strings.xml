@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">피부 유형 분류기(Test.ver)</string>
+    <string name="toggle_camera">전/후방 카메라 변경</string>
+    <string name="detect_object">피부 촬영(이마or볼)</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/rankcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/mainimage"
+        android:layout_width="61dp"
+        android:layout_height="103dp"
+        android:layout_toRightOf="@+id/rankcount"
+        android:src="@drawable/skinimage" />
+
+    <TextView
+        android:id="@+id/productCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mainimage"
+        android:text="rrrrrrxxx"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productCompany"
+        android:layout_toRightOf="@+id/mainimage"
+        android:text="rrrrrraaaaa"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/productSkinMois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:layout_toRightOf="@+id/mainimage"
+        android:text="32%"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/productSkinOil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:layout_toRightOf="@id/productSkinMois"
+        android:text="32%"
+        android:textSize="13dp" />
+</RelativeLayout>

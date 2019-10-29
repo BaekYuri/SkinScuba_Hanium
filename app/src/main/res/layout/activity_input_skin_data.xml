@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detect_skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="16dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:src="@drawable/logo"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:text="Step 2. 유수분 체크하기"
+        android:textColor="#ee9293"
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/detectImage"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_height="580dp"
+        android:scaleType="fitCenter" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="#ffffff">
+    <TextView
+        android:id="@+id/typeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="추천제품 확인하기"/>
+    </LinearLayout>
+    <!--
+    <TextView
+        android:text=" "/>
+    <TextView
+        android:text="당신의 유수분(%)을 입력해주세요."
+        android:textSize="16sp"
+        android:gravity="center"></TextView>
+    <TableRow>
+        <TextView
+            android:text="수분 입력"
+            android:layout_weight="1"></TextView>
+
+        <EditText
+            android:id="@+id/entermois"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="2"
+            android:hint="수분량을 입력하세요."
+            android:inputType="numberDecimal"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="유분 입력"
+            android:layout_weight="1"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enteroil"
+            android:hint="유분량을 입력하세요."
+            android:layout_weight="2"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/nextButton"
+            android:text="확인"
+            android:layout_weight="1"
+            android:layout_span="3"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+-->
+</FrameLayout>

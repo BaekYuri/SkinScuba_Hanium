@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"></ImageView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/banner_01" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Step 3. 결과"
+        android:gravity="center"
+        android:textColor="#ee9293"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=" "/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="당신의 피부타입은 "
+        android:textSize="20dp"
+        android:gravity="center"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="건성, "
+            android:textSize="20dp"
+            android:id="@+id/showSkintype"
+            android:gravity="center"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="여드름성입니다."
+            android:textSize="20dp"
+            android:id="@+id/typeA"
+            android:gravity="center"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+
+   <com.github.mikephil.charting.charts.PieChart
+       android:id="@+id/moisGraph"
+       android:layout_width="123dp"
+       android:layout_height="123dp"
+       android:layout_marginRight="10dp"/>
+
+   <com.github.mikephil.charting.charts.PieChart
+       android:id="@+id/oilGraph"
+       android:layout_width="123dp"
+       android:layout_height="123dp"
+       android:padding="10dp" />
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="추천제품"
+       android:gravity="center"
+       android:textSize="20dp"/>
+
+   <ListView
+       android:id="@+id/list"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       />
+
+</LinearLayout>
