@@ -54,9 +54,6 @@ public class InputSkinDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_skin_data);
         ImageView captureImage = (ImageView)findViewById(R.id.detectImage);
-//        ImageView leftFace=(ImageView)findViewById(R.id.leftcheek);
-//        ImageView rightFace = (ImageView)findViewById(R.id.rightcheek);
-//        ImageView head = (ImageView)findViewById(R.id.forehead);
         TextView typeId = (TextView) findViewById(R.id.typeid);
         Button nextButton2 = (Button) findViewById(R.id.but);
         final int atype, btype;
@@ -116,7 +113,6 @@ public class InputSkinDataActivity extends AppCompatActivity {
             }
             moisscore[x] = resultscore[x] + btype;
         }
-        Log.d("확인확인확인",Integer.toString(resultscore[0])+" "+Integer.toString(resultscore[1])+" "+Integer.toString((resultscore[2])));
         for(int x=0;x<3;x++) {
             if (moisscore[x] >= 16) {
                 partType[x] = 3;
